@@ -55,6 +55,7 @@
   .gutter.gutter-horizontal {
   
     background-size: 100% auto;
+    cursor:w-resize;
 
   }
 
