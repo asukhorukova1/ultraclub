@@ -58,6 +58,11 @@
     cursor:w-resize;
 
   }
+  .gutter.gutter-horizontal:hover {
+  
+    cursor:w-resize;
+
+  }
 
 
   .split.split-horizontal, .gutter.gutter-horizontal {
