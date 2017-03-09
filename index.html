@@ -6,18 +6,9 @@
 <title>UltraClub</title>
     </head>
     <body>
-<!-- <div id="posts">allalalalalall</div>
-<div id="coloredDiv">A div that changes color randomly??!?!?!?!</div>
-  <svg id="mySVG" viewBox="0 0 800 600">
-    <path d="M336.562,391.644c-6.528,1.487-31.061-27.201-38.473-33.997c-19.623-17.991-53.303-42.001-61.023-68.984
-	c-11.567-40.428,32.108-64.271,66.771-58.177c12.462,2.191,22.562,9.001,35.642,8.382c36.924-1.749,69.172-43.562,93.542-66.798
-	c13.946-13.298,44.593-46.694,67.777-42.638c16.059,2.81,31.174,26.935,40.969,38.964c14.574,17.901,31.203,36.783,28.525,60.654
-	c-2.681,23.902-7.18,48.397-18.905,69.388c-7.104,12.715-15.116,25.115-24.365,36.441c-11.481,14.059-26.463,23.245-38.416,36.211
-	c-21.805,23.654-0.722,48.763,15.069,69.914c5.502,7.37,11.516,7.97,6.745,19.067c-4.91,11.422-18.935,14.925-29.63,16.505
-	c-27.112,4.005-62.651,8.405-85.588-9.83c-16.932-13.462-33.324-28.944-41.858-49.145c-4.441-10.512-8.208-19.733-18.152-27.326" />
-  </svg>
-
-    <a href="javascript:void(0);" onClick="javascript: location.reload(true);">Go again!</a> -->
+	        <style>
+		@import url('https://fonts.googleapis.com/css?family=Aclonica|Acme|Adamina|Aldrich|Alegreya+Sans+SC|Amaranth|Amiko|Anton|Averia+Serif+Libre|Baloo+Bhaina|Bangers|Bree+Serif|Carter+One|Changa|Contrail+One|Convergence|Diplomata+SC|Doppio+One|Fascinate+Inline|Francois+One|Fredoka+One|Fugaz+One|Gentium+Book+Basic|Graduate|Istok+Web|Jockey+One|Kelly+Slab|Luckiest+Guy|Marmelad|Merriweather+Sans|Monda|Orbitron|Patua+One|Quantico|Racing+Sans+One|Ranga|Roboto+Mono|Roboto+Slab|Rubik+Mono+One|Ruslan+Display|Russo+One|Sansita|Unica+One|VT323|Volkhov');
+		</style>
 
 
 		<div  id="a" class="split split-horizontal">
@@ -176,9 +167,9 @@
 					    }
 					}
 
-			    var fontType = [ "Arial", "Verdana", "Helvetica", "Georgia","Lucida Console","Book Antiqua","Palatino Linotype"];
+			    var fontType = [ "Arial", "Verdana", "Helvetica", "Georgia",'Rubik Mono One','Roboto Slab','Bree Serif','Merriweather Sans','Anton','Francois One','Orbitron','Patua One','Acme','Sansita','VT323','Russo One','Istok Web','Fredoka One','Gentium Book Basic','Amiko','Bangers','Amaranth','Volkhov','Adamina','Luckiest Guy','Convergence','Alegreya Sans SC','Aldrich','Fugaz One','Carter One','Ruslan Display','Jockey One','Contrail One','Doppio One','Marmelad','Quantico', 'Aclonica','Graduate','Racing Sans One','Fascinate Inline','Kelly Slab','Averia Serif Libre','Roboto Mono'];
 				var num;
-				num=Math.floor(Math.random()*7);
+				num=Math.floor(Math.random()*fontType.length);
 				document.getElementById("about").style.fontFamily =fontType[num];
 				document.getElementById("contact").style.fontFamily =fontType[num];
 				document.getElementById("participants").style.fontFamily =fontType[num];
