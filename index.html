@@ -17,18 +17,18 @@
 				<!-- <p><span id="name" >ULTRA CLUB</span><br> -->
 				<div id="e" class="split split-vertical">
 					<div id="g" class="split split-horizontal">
-						<li id = "about" target="1" class = "menu">About</li>
+						<li id = "about" target="1" class = "menu texts">About</li>
 					</div>
 					<div id="h" class="split split-horizontal">
-						<li id = "contact" target="2" class = "menu">Contact</li>
+						<li id = "contact" target="2" class = "menu texts">Contact</li>
 					</div>
 				</div>
 				<div id="f" class="split split-vertical">
 					<div id="i" class="split split-horizontal">
-						<li id = "work" target="3" class = "menu">Work</li>
+						<li id = "work" target="3" class = "menu texts">Work</li>
 					</div>
 					<div id="j" class="split split-horizontal">
-						<li id = "participants" target="4" class = "menu">Participants</li>
+						<li id = "participants" target="4" class = "menu texts">Participants</li>
 					</div>
 				</div>
 			</div>
@@ -37,7 +37,7 @@
 
 			<div id="d"  class="split split-vertical" style="font-size:35px;padding:15px 15px 15px 15px">
 
-				<p id="biggertext1" class="biggertext">The Ultra Club is an alternative-economy design agency. We work at the intersection of design, art and performance. The aim is to find new, self-determined forms of working together by addressing questions of sustainability, ethics, experiment and creativity
+				<p id="biggertext1" class="biggertext texts ">The Ultra Club is an alternative-economy design agency. We work at the intersection of design, art and performance. The aim is to find new, self-determined forms of working together by addressing questions of sustainability, ethics, experiment and creativity
 				 in design. <br>
 
 				As the working field of design is in transition, we want to create a space to question what is there, a space for exchange and reflection, and look for possible alternatives – ideally together with our clients. Do we have to give up radicalism and experimt
@@ -50,7 +50,7 @@
 				The Ultra Club is a design office – but also a research-project, a trial-version, a collaboration, a school, a series of events and an experimental laboratory. Our hope is that we can broaden our views, become stronger in our work and that we find collaborators
 				that will challenge our ideals. <br><br></p>
 
-				<p id="biggertext2" class="biggertext">
+				<p id="biggertext2" class="biggertext texts">
 					Job: job@letman.com<br>
 					Arthur: arthur@pittig.nu<br>
 					Aukje: aukjedekker@eddietheeaglemuseum.com<br>
@@ -58,11 +58,11 @@
 					White Mamba: 0641883603<br>
 				</p>
 
-				<p id="biggertext3" class="biggertext">
+				<p id="biggertext3" class="biggertext texts">
 					coming soon <3
 				</p>
 
-				<p id="biggertext4" class="biggertext">
+				<p id="biggertext4" class="biggertext texts">
 					(I just copied the fb post)<br><br>
 					IDENTITY/ WEBSITE<br>
 					Asya (chef)<br>
@@ -157,6 +157,13 @@
 			    coloredDiv.style.backgroundColor = 'rgb('+green+','+red+','+blue+')';
 			    coloredDiv2.style.backgroundColor = 'rgb('+green+','+red+','+blue+')';
 			    coloredDiv3.style.backgroundColor = 'rgb('+blue+','+green+','+red+')';
+			    var o = Math.round(((parseInt(red) * 299) + (parseInt(blue) * 587) + (parseInt(green) * 114)) /1000);
+			    if(o > 125) {
+			        $('.texts').css('color', 'black');
+
+			    }else{ 
+			        $('.texts').css('color', '#e6e6e6');
+			    }
 			    var tds = document.getElementsByTagName("li");
 					for(var i = 0; i < tds.length; i++) {
 					    tds[i].onmouseover = function() {
