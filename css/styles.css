@@ -1,10 +1,10 @@
-  * {
+   * {
     -webkit-font-smoothing: antialiased;
     margin: 0px;
     font-family: helvetica, arial, verdana, sans-serif;
   }
 
-::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar { width: 0px; }
 ::-webkit-scrollbar-thumb { background: rgba(0,0,0,.25); border-radius: 15px; }
 
 	*::selection{ color: pink; }
@@ -14,6 +14,7 @@
     height: 100%;
     margin: 0px;
     background-color: black;
+    box-sizing: border-box;
   }
 
   header{
@@ -125,3 +126,70 @@
   .biggertext{
     display: none;
   }
+
+
+
+
+
+
+
+
+
+
+
+.mapmenu{
+  position: relative;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  border: 2px solid ;
+  border-color: black;
+
+  
+
+}
+#mapmenuleft{width:20%;}
+#mapmenucenter{
+  width:50%;
+  overflow-y: scroll;
+
+}
+
+#mapmenuright{width:50%;}
+
+#menucontainer{
+  display: flex;
+  position: fixed;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+
+}
+#Layer_1{
+  width: 100%;
+   /* overflow: auto;*/
+}
+.shopnames{
+  
+  width: 100%;
+  height:100%;
+  position: absolute;
+}
+.shop{
+  font-size: 30px;
+}
+.showme{
+  font-size: 45px;
+  padding: 20px 20px 20px 20px;
+}
+#shop1:hover > #showme{
+  display: block;
+
+}
+#shop1:hover{
+  fill: red;
+}
+.fillcolor{
+  fill: pink;
+}
