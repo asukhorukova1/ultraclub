@@ -1,4 +1,4 @@
-   * {
+  * {
     -webkit-font-smoothing: antialiased;
     margin: 0px;
     font-family: helvetica, arial, verdana, sans-serif;
@@ -12,9 +12,16 @@
 
   html, body {
     height: 100%;
+    width: 100%;
     margin: 0px;
     background-color: black;
     box-sizing: border-box;
+    overflow-x: hidden;
+      -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+  
   }
 
   header{
@@ -56,12 +63,12 @@
   .gutter.gutter-horizontal {
   
     background-size: 100% auto;
-    cursor:w-resize;
+   
 
   }
   .gutter.gutter-horizontal:hover {
   
-    cursor:w-resize;
+    
 
   }
 
@@ -90,7 +97,7 @@
 
   }
   #g,#h,#i,#j{
-  cursor:crosshair
+  
   }
 
   #d{
@@ -120,7 +127,7 @@
     list-style-type: none; 
     list-style-image: none; 
     font-style: bold;
-    cursor:crosshair;
+   
     
   }
   .biggertext{
@@ -135,45 +142,97 @@
 
 
 
-
-
 .mapmenu{
-  position: relative;
-  float: left;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
+  
   border: 2px solid ;
   border-color: black;
+  -webkit-transition: all 1s; 
+  -moz-transition: all 1s; 
+  -o-transition: all 1s; 
+  transition: all 1s;
+
 
   
 
 }
+.mapmenu2{
+  z-index: 2000;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border: 4px solid;
+  left:-4px;
+  top: -4px;
+  position: fixed;
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+  justify-content: space-between;
+  
+  height: 50px; 
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+  /*height: 10%;*/
+  /*border:none;*/
+  /*height: 100%;*/
+}
 #mapmenuleft{width:20%;}
 #mapmenucenter{
+  left: -4px;
   width:50%;
   overflow-y: scroll;
 
 }
 
-#mapmenuright{width:50%;}
+#mapmenuright{
+  position: fixed;
+  border: 4px solid;
+  right: -10px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  width:50%;
+  
+  top: 0%;
+  overflow-y: scroll;
+/*  display: flex;
+  align-items: center;
+  justify-content: center;*/
+  padding-top: 90px;
+  
 
+  }
 #menucontainer{
   display: flex;
-  position: fixed;
-  background-color: blue;
+  position: relative;
+  float: top;
+
   width: 100%;
   height: 100%;
 
 }
 #Layer_1{
+  top: 40px;
   width: 100%;
+  
    /* overflow: auto;*/
 }
+svg{
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+}
+polygon{-webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;}
 .shopnames{
   
-  width: 100%;
-  height:100%;
+/*  width: 100%;
+  height:100%;*/
   position: absolute;
 }
 .shop{
@@ -182,6 +241,9 @@
 .showme{
   font-size: 45px;
   padding: 20px 20px 20px 20px;
+  height: 100%;
+  width: 100%;
+
 }
 #shop1:hover > #showme{
   display: block;
@@ -192,4 +254,71 @@
 }
 .fillcolor{
   fill: pink;
+}
+#streetheader{
+
+}
+#header{
+  font-size: 20px;
+  position: relative;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  height:40px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+polygon, rect, line, polyline{
+  z-index:2;
+    -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+}
+#Layer1{
+  /*background-image:url("25.png");*/
+}
+.scrollthis{
+  width: 100%;
+  overflow-y: scroll;
+}
+#logo{
+  max-width: 90%;
+  padding: 10px 10px 10px 10px ;
+  z-index: 10;
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+
+}
+#logoyas{
+  blend-mode: multiply;
+  max-width: 150px;
+  height: auto;
+  -webkit-transition: all 0.5s; 
+  -moz-transition: all 0.5s; 
+  -o-transition: all 0.5s; 
+  transition: all 0.5s;
+}
+.zindex20{
+
+}
+.activehouse{
+  fill:red;
+}
+#aboutus{
+padding-right: 40px;
+font-size: 30px;
+padding-top: 10px;
+height: 100%;
+
+  
+}
+.textabout{
+  position: relative;
+  padding: 40px 20px 20px 20px;
+  height: 200%;
+  width: 100%;
+  padding-bottom: 90px;
 }
