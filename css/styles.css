@@ -323,3 +323,33 @@ height: 100%;
   width: 90%;
   padding-bottom: 150px;
 }
+.imageshop{
+  width: 100%;
+  height: auto;
+/*  padding: 0px 0px 0px 0px;*/
+
+  align-self: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.infoshop{
+  font-size:27px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+}
+.collaboration{
+  font-size: 20px;
+}
+.last{
+  margin-bottom: 100px;
+}
+.audio{
+width: 100%;
+position: relative;
+float: top;
+height: 100px;
+}
